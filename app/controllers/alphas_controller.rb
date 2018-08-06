@@ -1,0 +1,2 @@
+class AlphasController < ApplicationController
+end
