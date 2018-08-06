@@ -1,0 +1,17 @@
+<!-- the top login link and signup link on the top of page is from Application.html.erb (which is a global document), also displays username/email of loged in user -->
+
+<p>welcome</p>
+
+<p>this page is authorized users only </p>
+
+<% if current_user && current_user.editor? %>
+    <p>
+        <%= link_to "See Users", pillar_path %>
+    </p>
+<% end %>
+
+<p>login</p>
+<%= link_to 'Log in', login_path %>
+
+<p>logout</p>
+<%= link_to 'Log out', logout_path, method: "delete" %> <!-- must use <<method: "delete">> to change link_to from link (GET) to a delete action. Or else there will be error message "no route to /GET/" -->

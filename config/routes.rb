@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
     
+    root 'pillars#index'
+    
     get 'signup'  => 'users#new' 
     resources :users
+    
+    get '/pillar' => 'pillars#show'
     
     get '/login' => 'sessions#new'
     post 'login' => 'sessions#create'
