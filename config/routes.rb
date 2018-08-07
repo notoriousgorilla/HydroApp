@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
     
-    root 'pillars#index'
+    root 'portals#index'
     
     get '/signup'  => 'users#new' 
     resources :users
