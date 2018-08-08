@@ -6,6 +6,5 @@ $(document).ready(() => {
         $alphaList.hide();    
     });
     
-    
-    
+        
 });
