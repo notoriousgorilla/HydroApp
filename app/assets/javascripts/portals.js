@@ -1,5 +1,7 @@
 $(document).ready(() => {
     
+    var $alphaButton = $('.alphas-list');
+    
     var $alphaList = $('.content-main-alphas');
     var $placeHolder1 = $('.content-main-placeholder1');
     var $placeHolder2 = $('.content-main-placeholder2');
@@ -8,7 +10,7 @@ $(document).ready(() => {
     $placeHolder2.hide();
     $alphaList.hide();
     
-    $alphaList.on('click', () => {
+    $alphaButton.on('click', () => {
         $alphaList.show();
         $placeHolder1.hide();
         $placeHolder2.hide();
