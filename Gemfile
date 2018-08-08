@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # bootstrap
 gem 'bootstrap', '~> 4.1.1'
 
+#jquery for javascript
+gem 'jquery-rails'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
