@@ -1,3 +1,41 @@
 // Place all the styles related to the Portals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron {
+    background-image: asset-url('generic_header.jpg');
+    background-size: cover;
+    margin: 0px;
+}
+
+#jumbo {
+    margin: 0px;
+    height: 300px;;
+}
+
+#main-back-alu {
+    background-color: #161617;
+}
+
+.container {
+    .header-row-upper {
+        background-color: white;
+    }
+    .header-row-inner {
+        margin: 1px 1px 0px 1px;
+        padding: 0.1em;
+        background-color: grey;
+        .alphas-list {
+              
+        }
+        p {
+            text-align: center;
+        }  
+    }
+}
+
+.col-md-12 {
+    height: 600px;
+    background-color: white;
+    
+}
