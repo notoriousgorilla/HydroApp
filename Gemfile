@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # bootstrap
 gem 'bootstrap', '~> 4.1.1'
 
-#jquery for javascript
+#jquery for ruby
 gem 'jquery-rails'
 
 # Use ActiveStorage variant
