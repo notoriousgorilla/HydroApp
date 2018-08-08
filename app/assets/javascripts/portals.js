@@ -1,9 +1,17 @@
 $(document).ready(() => {
     
-    var $alphaList = $('.alphas-list');
+    var $alphaList = $('.content-main-alphas');
+    var $placeHolder1 = $('.content-main-placeholder1');
+    var $placeHolder2 = $('.content-main-placeholder2');
+    
+    $placeHolder1.show();
+    $placeHolder2.hide();
+    $alphaList.hide();
     
     $alphaList.on('click', () => {
-        $alphaList.hide();    
+        $alphaList.show();
+        $placeHolder1.hide();
+        $placeHolder2.hide();
     });
     
         
