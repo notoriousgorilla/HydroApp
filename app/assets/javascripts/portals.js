@@ -16,6 +16,5 @@ $(document).ready(() => {
         $placeHolder2.hide();
     });
     
-    
-    
+        
 });
