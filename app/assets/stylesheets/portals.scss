@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron {
-    background-image: image-url('generic_header.jpg');
+    background-image: asset-url('generic_header.jpg');
     background-size: cover;
     margin: 0px;
 }
@@ -17,14 +17,20 @@
     background-color: #161617;
 }
 
-.active-tab-main {
-    background-color: rgba(0,0,0,0.4);
-         
-}
+
 
 .container {
+    .active-tab-main { //activated tab
+    margin: 3px 1px 0px 1px;
+        padding: 0.1em;
+        background-color: white !important;
+        cursor: pointer;
+        p {
+            text-align: center;
+        }           
+    }
     .header-inner-alphas {
-        margin: 1px 1px 0px 1px;
+        margin: 3px 1px 0px 1px;
         padding: 0.1em;
         background-color: grey;
         cursor: pointer;
@@ -33,7 +39,7 @@
         }  
     }
     .header-inner-locate {
-        margin: 1px 1px 0px 1px;
+        margin: 3px 1px 0px 1px;
         padding: 0.1em;
         background-color: grey;
         cursor: pointer;
@@ -42,7 +48,7 @@
         }  
     }
     .header-inner-about {
-        margin: 1px 1px 0px 1px;
+        margin: 3px 1px 0px 1px;
         padding: 0.1em;
         background-color: grey;
         cursor: pointer;
