@@ -17,17 +17,35 @@
     background-color: #161617;
 }
 
+.active-tab-main {
+    background-color: rgba(0,0,0,0.4);
+         
+}
+
 .container {
-    .header-row-upper {
-        background-color: white;
-    }
-    .header-row-inner {
+    .header-inner-alphas {
         margin: 1px 1px 0px 1px;
         padding: 0.1em;
         background-color: grey;
-        .alphas-list {
-              
-        }
+        cursor: pointer;
+        p {
+            text-align: center;
+        }  
+    }
+    .header-inner-locate {
+        margin: 1px 1px 0px 1px;
+        padding: 0.1em;
+        background-color: grey;
+        cursor: pointer;
+        p {
+            text-align: center;
+        }  
+    }
+    .header-inner-about {
+        margin: 1px 1px 0px 1px;
+        padding: 0.1em;
+        background-color: grey;
+        cursor: pointer;
         p {
             text-align: center;
         }  
@@ -39,3 +57,5 @@
     background-color: white;
     
 }
+
+
