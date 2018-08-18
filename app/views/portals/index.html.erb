@@ -42,7 +42,43 @@
                             <p>placeholder2</p>
                         </div>
                         <div class='content-main-alphas'>
-                            <p>alphas</p>
+                            <div class='row'>
+                                <div class='col-md-12'>
+                                    <h1>alphas</h1>
+                                </div>
+                            </div>
+                            <div>
+                                <div class='row'>
+                                    <div class='col-md-1'>
+                                        
+                                    </div>
+                                    <div class='col-md-5'>
+                                        <% @alphas.first(5).each do |a| %>
+                                        <ul>
+                                            <li>
+                                                <div class='list-item-alphas'>
+                                                    <p><%= a.name %></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <% end %>
+                                        </div>
+                                    <div class='col-md-5'>
+                                        <% @alphas.last(5).each do |a| %>
+                                        <ul>
+                                            <li>
+                                                <div class='list-item-alphas'>
+                                                    <p><%= a.name %></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <% end %>
+                                    </div>
+                                    <div class='col-md-1'>
+                                        
+                                    </div>
+                                </div>  
+                            </div>
                         </div>
                     </div>
                 </div>

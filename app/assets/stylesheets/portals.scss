@@ -58,10 +58,34 @@
     }
 }
 
-.col-md-12 {
+.content-main-block {
     height: 600px;
     background-color: white;
     
 }
+
+.content-main-alphas {
+    text-align: center;
+    ul {
+        list-style: none;
+    }
+    .col-md-12 {
+        
+    }
+    .list-item-alphas {
+        border: solid black 1px;
+        font-family: arial, sans-serif;
+        font-size: 200%;
+        background-color: rgba(212, 212, 212, 1);
+        p {
+            padding: 0.2em;
+        }
+        &:hover { //the '&' is the scss 'parent' indicator
+        background-color: rgba(235, 235, 76, 1);
+        }
+    }
+}
+
+
 
 
