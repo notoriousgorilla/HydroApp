@@ -61,7 +61,9 @@
 .content-main-block {
     height: 600px;
     background-color: white;
-    
+    .content-main-placeholder1 {
+        text-align: center;
+    }
 }
 
 .content-main-alphas {
@@ -85,6 +87,7 @@
         }
     }
 }
+
 
 
 
