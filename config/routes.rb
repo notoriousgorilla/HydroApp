@@ -2,8 +2,6 @@ Rails.application.routes.draw do
     
     root 'portals#index'
     
-    root 'alphas#index'
-    
     get '/signup'  => 'users#new' 
     resources :users
     
@@ -12,6 +10,8 @@ Rails.application.routes.draw do
     get '/login' => 'sessions#new'
     post '/login' => 'sessions#create'
     delete '/logout' => 'sessions#destroy'
+    
+    get '/alpha/show/:id' => 'alphas#show', as: :show_alpha 
     
     
     
