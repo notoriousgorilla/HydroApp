@@ -1,7 +1,7 @@
 class PortalsController < ApplicationController
     
     def index
-        @alpha = Alpha.all
+        @alphas = Alpha.all
     end
 
     def show

@@ -61,10 +61,10 @@
                                         
                                     </div>
                                     <div class='col-md-5'>
-                                        <% @alpha.first(5).each do |a| %>
+                                        <% @alphas.first(5).each do |a| %>
                                         <ul>
                                             <li>
-                                                <%= link_to show_alpha_path(@alpha, a) do %> <!-- include @alphas here because this is a nested view inside @portals -->
+                                                <%= link_to show_alpha_path(a) do %> 
                                                     <div class='list-item-alphas'> <!-- by wrapping tis div in a ruby loop the whole div becomes a link -->
                                                         <p><%= a.name %></p> 
                                                     </div>
@@ -74,10 +74,10 @@
                                         <% end %>
                                         </div>
                                     <div class='col-md-5'>
-                                        <% @alpha.last(5).each do |a| %>
+                                        <% @alphas.last(5).each do |a| %>
                                         <ul>
                                             <li>
-                                                <%= link_to show_alpha_path(@alpha, a) do %> <!-- include @alphas here because this is a nested view inside @portals -->
+                                                <%= link_to show_alpha_path(a) do %> 
                                                     <div class='list-item-alphas'> <!-- by wrapping tis div in a ruby loop the whole div becomes a link -->
                                                         <p><%= a.name %></p> 
                                                     </div>

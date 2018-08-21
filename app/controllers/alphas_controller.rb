@@ -8,5 +8,10 @@ class AlphasController < ApplicationController
         @alpha = Alpha.find(params[:id])
     end
     
+    private
+        def alpha_params
+            params.require(:alpha).permit(:name)
+        end
+    
     
 end
