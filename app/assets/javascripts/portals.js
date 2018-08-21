@@ -1,5 +1,10 @@
 $(document).ready(() => {
     
+    //This functions reloads page when back-button is pressed - consider moving it to applications.js -- needed because jQuery is not loading on back-button
+    $(window).on('popstate', function() {
+        location.reload(true);
+    });
+    
     var $alphaClass = $('.header-inner-alphas');
     var $aboutClass = $('.header-inner-about');
     var $locateClass = $('.header-inner-locate');
