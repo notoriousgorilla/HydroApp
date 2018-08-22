@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2018_08_10_142820) do
   end
 
   create_table "betalinks", force: :cascade do |t|
-    t.string "beta_name"
+    t.string "name"
     t.string "content"
     t.string "image"
     t.datetime "created_at", null: false
