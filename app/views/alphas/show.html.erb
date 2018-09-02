@@ -15,6 +15,24 @@
             
         </div>
     </div>
+    <div class='row'>
+        <div class='col-md-2'>
+            
+        </div>
+        <div class='col-md-8'>
+            <% @betalinks.each do |beta| %>
+            <div class='alpha-block-title'>
+                <p><%= beta.name %></p>
+            </div>
+            <div class='alpha-block-content'>
+                <p><%= beta.content %></p>
+            </div>
+        <% end %>
+        </div>
+        <div class='col-md-2'>
+            
+        </div>
+    </div>
 </div>
 
 
