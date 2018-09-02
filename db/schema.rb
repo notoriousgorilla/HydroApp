@@ -27,8 +27,10 @@ ActiveRecord::Schema.define(version: 2018_08_10_142820) do
     t.string "name"
     t.string "content"
     t.string "image"
+    t.bigint "alpha_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["alpha_id"], name: "index_betalinks_on_alpha_id"
   end
 
   create_table "meetings", force: :cascade do |t|
