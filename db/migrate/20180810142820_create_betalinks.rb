@@ -4,6 +4,7 @@ class CreateBetalinks < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :content
       t.string :image
+      t.references :alpha
       t.timestamps
     end
   end
