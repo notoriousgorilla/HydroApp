@@ -1,3 +1,3 @@
 class Betalink < ApplicationRecord
-    belongs_to :alpha, foreign_key: :name
+    belongs_to :alpha
 end
