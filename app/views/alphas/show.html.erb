@@ -5,32 +5,91 @@
         </div>
         <div class='col-md-8'>
             <div class='alpha-block-title'>
-                <p><%= @alpha.name %></p>
+                <h1><%= @alpha.name %></h1>
             </div>
-            <div class='alpha-block-content'>
-                <p><%= @alpha.content %></p>
-            </div>
+                
         </div>
         <div class='col-md-2'>
             
         </div>
     </div>
-    <div class='row'>
-        <div class='col-md-2'>
-            
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-1'>
+                        
+            </div>
+            <div class='col-md-5'>
+                <div class='alpha-block-content'>
+                    <p><%= @alpha.content %></p>
+                </div>
+            </div>
+            <div class='col-md-5'>
+                <div class='alpha-block-image'>
+                    <p><%= image_tag @alpha.image %></p>
+                </div>
+            </div>
+            <div class='col-md-1'>
+                        
+            </div>
         </div>
-        <div class='col-md-8'>
-            <% @betalinks.each do |beta| %>
-            <div class='alpha-block-title'>
-                <p><%= beta.name %></p>
+    </div>
+    <div class='row'>
+        <div class='col-md-6'>
+        <% @betalinks.first(1).each do |beta| %>
+            <div class='row'>
+                <div class='col-md-1'>
+                    
+                </div>
+                <div class='col-md-10'> 
+                    <div class='alpha-block-title'>
+                        <h3><%= beta.name %></h3>
+                        <p><%= beta.content %></p>
+                        <p><%= image_tag beta.image %></p>
+                    </div>
+                </div>
+                <div class='col-md-1'>
+                    
+                </div>
             </div>
-            <div class='alpha-block-content'>
-                <p><%= beta.content %></p>
+        </div>
+        <% end %>
+        <div class='col-md-6'>
+            <% @betalinks.last(1).each do |beta| %>
+            <div class='row'>
+                <div class='col-md-1'>
+                    
+                </div>
+                <div class='col-md-10'> 
+                    <div class='alpha-block-title'>
+                        <h3><%= beta.name %></h3>
+                        <p><%= beta.content %></p>
+                        <p><%= image_tag beta.image %></p>
+                    </div>
+                </div>
+                <div class='col-md-1'>
+                    
+                </div>
             </div>
+        </div>
         <% end %>
         </div>
-        <div class='col-md-2'>
-            
+    <div class='row'>
+        <div class='col-md-6'>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='alpha-block-content'>
+                        <p></p>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='alpha-block-image'>
+                        <p></p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <!-- insert betalink "second" --> 
         </div>
     </div>
 </div>

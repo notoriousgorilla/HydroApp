@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     post '/login' => 'sessions#create'
     delete '/logout' => 'sessions#destroy'
     
-    get '/alpha/show/:id' => 'alphas#show' , as: :show_alpha 
+    get '/alpha/show/:id' => 'alphas#show' , as: :show_alpha
     
     
     
