@@ -17,7 +17,40 @@
     background-color: #161617;
 }
 
+html, body {
+    height: 100%;
+}
 
+.container-fluid {
+    min-height: 100%;
+    width: 100%;
+    background-image: url('vkpark_birdview_logo.png');
+}
+
+.content-main-block {
+    padding: 10em 0em 0em 0em;
+    .content-main-menu {
+        text-align: left;
+        h2 {
+            button {
+            border-radius: 2em;
+            width: 100%;
+            padding: 0.5em 0.2em 0.2em 0.2em;
+            background-color: red;
+            }
+        }
+        h4 {
+            button {
+            border-radius: 0.4em;
+            width: 100%;
+            padding: 0.5em 0.2em 0.2em 0.2em;
+            }
+        }
+        ul {
+        list-style: none;
+        }
+    }
+}
 
 .container {
     .active-tab-main { //activated tab
@@ -59,8 +92,7 @@
 }
 
 .content-main-block {
-    height: 600px;
-    background-color: white;
+    
     .content-main-placeholder1 {
         text-align: center;
     }

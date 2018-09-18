@@ -1,100 +1,28 @@
 <body>
-    <div class='jumbotron' id='jumbo'>
-        
-    </div>
-    <div class='container-fluid' id='main-back-alu'>
-        <div class='container'>
-            <div class='header-row-upper'>
-                <div class='row'>
-                    <div class='col-md-4'>
-                        <div class='header-inner-about'>
-                            <div class='header-tab-about'>
-                                <p>Placeholder</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='col-md-4'>
-                        <div class='header-inner-locate'>
-                            <div class='header-tab-locate'>
-                                <p>Placeholder</p>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class='col-md-4'>
-                        <div class='header-inner-alphas'>
-                            <div class='alphas-list'>
-                                <p> <%=link_to 'A-Z', login_path %> </p>
-                            </div> 
-                        </div>
-                           
+    <div class='container-fluid'>
+        <div class='content-main-block'>
+            <div class='row'>
+                <div class='col-md-4'>
+                    <div class='content-main-menu'>
+                        <ul>
+                            <li><h2><button>FOR LEIETAKERE</button></h2></li>
+                            <li><h4><button>DAGENS MENY KANTINE</button></h2></li>
+                            <li><h4><button>BUSSTIDER REALTIME</button></h2></li>
+                            <li><h2><button>FOR LEIETAKERE</button></h2></li>
+                        </ul> 
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class='container'>
-            <div class='content-main-block'>
-                <div class='row'>
-                    <div class='col-md-12'> <!--use javascript to switch between these below --> 
-                        <div class='content-main-placeholder1'>
-                            <div class='row'>
-                                <div class='col-sm-6'>
-                                    <p>placeholder1 left</p>    
-                                </div>
-                                <div class='col-sm-6'>
-                                    <p>placeholder1 right</p>    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class='content-main-placeholder2'>
-                            <p>placeholder2</p>
-                        </div>
-                        <div class='content-main-alphas'>
-                            <div class='row'>
-                                <div class='col-md-12'>
-                                    <h1>alphas</h1>
-                                </div>
-                            </div>
-                            <div>
-                                <div class='row'>
-                                    <div class='col-md-1'>
-                                        
-                                    </div>
-                                    <div class='col-md-5'>
-                                        <% @alphas.first(5).each do |a| %>
-                                        <ul>
-                                            <li>
-                                                <%= link_to show_alpha_path(a) do %> 
-                                                    <div class='list-item-alphas'> <!-- by wrapping tis div in a ruby loop the whole div becomes a link -->
-                                                        <p><%= a.name %></p> 
-                                                    </div>
-                                                <% end %>
-                                            </li>
-                                        </ul>
-                                        <% end %>
-                                        </div>
-                                    <div class='col-md-5'>
-                                        <% @alphas.last(5).each do |a| %>
-                                        <ul>
-                                            <li>
-                                                <%= link_to show_alpha_path(a) do %> 
-                                                    <div class='list-item-alphas'> <!-- by wrapping tis div in a ruby loop the whole div becomes a link -->
-                                                        <p><%= a.name %></p> 
-                                                    </div>
-                                                <% end %>
-                                            </li>
-                                        </ul>
-                                        <% end %>
-                                    </div>
-                                    <div class='col-md-1'>
-                                        
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
+                <div class='col-md-4'>
+                    <div class='content-main-blank'>
+                        
+                    </div> 
                 </div>
-            </div>
+                <div class='col-md-4'>
+                    <div class='content-main-blank'>
+                        
+                    </div>
+                </div>    
+            </div>    
         </div>
     </div>
 </body>
