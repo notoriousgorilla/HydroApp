@@ -17,78 +17,82 @@
     background-color: #161617;
 }
 
+html, body {
+    height: 100%;
+}
 
+#index-container-fluid {
+    min-height: 100%;
+    width: 100%;
+    background-image: url('vkpark_birdview_logo.png');
+}
 
-.container {
-    .active-tab-main { //activated tab
-    margin: 3px 1px 0px 1px;
-        padding: 0.1em;
-        background-color: white !important;
-        cursor: pointer;
-        p {
-            text-align: center;
-        }           
-    }
-    .header-inner-alphas {
-        margin: 3px 1px 0px 1px;
-        padding: 0.1em;
-        background-color: grey;
-        cursor: pointer;
-        p {
-            text-align: center;
-        }  
-    }
-    .header-inner-locate {
-        margin: 3px 1px 0px 1px;
-        padding: 0.1em;
-        background-color: grey;
-        cursor: pointer;
-        p {
-            text-align: center;
-        }  
-    }
-    .header-inner-about {
-        margin: 3px 1px 0px 1px;
-        padding: 0.1em;
-        background-color: grey;
-        cursor: pointer;
-        p {
-            text-align: center;
-        }  
-    }
+#container-fill-screen {
+    height: 100%;
+    width: 100%;
+    background-image: url('sea_view.png');
+    background-size: cover;
 }
 
 .content-main-block {
-    height: 600px;
-    background-color: white;
-    .content-main-placeholder1 {
-        text-align: center;
+    .content-main-menu {
+        padding: 15em 0em 0em 0em;
+        text-align: left;
+        h2 {
+            button {
+            border-radius: 2em;
+            width: 100%;
+            padding: 0.5em 0.2em 0.2em 0.2em;
+            background-color: rgba(173, 178, 189, 0.8);
+            }
+        }
+        h4 {
+            button {
+            border-radius: 0.4em;
+            width: 100%;
+            padding: 0.5em 0.2em 0.2em 0.2em;
+            background-color: rgba(235, 211, 147, 0.8);
+            }
+        }
+        ul {
+            list-style: none;
+        }
     }
 }
-
-.content-main-alphas {
+.content-alpha-block {
     text-align: center;
-    ul {
-        list-style: none;
-    }
-    .col-md-12 {
-        
-    }
-    .list-item-alphas {
-        border: solid black 1px;
-        font-family: arial, sans-serif;
-        font-size: 200%;
-        background-color: rgba(212, 212, 212, 1);
-        p {
-            padding: 0.2em;
+    .title-main-upr {
+        padding: 5em 0em 0em 0em;
+        h1 {
+            color: white;
         }
-        &:hover { //the '&' is the scss 'parent' indicator
-        background-color: rgba(235, 235, 76, 1);
+    }
+    .content-main-menu {
+        padding: 5em 0em 0em 0em;
+        ul {
+            list-style-type:none;
+            padding:0px;
+            margin:1em;
         }
+        .list-item-alpha {
+            button {
+                border-radius: 2em;
+                width: 100%;
+                padding: 0.5em 0.2em 0.2em 0.2em;
+                background-color: rgba(173, 178, 189, 0.6);
+            }
+        }
+        .a-emergency-btn {
+            h2 {
+                padding: 1rem;
+            }
+            border-radius: 2em;
+            width: 100%;
+            padding: 0.5em 0.2em 0.2em 0.2em;
+            background-color: rgba(222, 50, 39, 0.6);
+        }
+        border: black solid 1px;
     }
 }
-
-
-
 
 

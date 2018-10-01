@@ -1,0 +1,103 @@
+<body>
+    <div class='container-fluid' id='container-fill-screen'>
+        <div class='content-main-container'>
+            <div class='content-alpha-block'>
+                <div class='row'>
+                    <div class='col-md-1'>
+                        
+                    </div>
+                    <div class='col-md-10'>
+                        <div class='title-main-upr'>
+                            <h1>FOR LEIETAKERE</h1>
+                            <h3>Velg hovedkategori for den informasjonen du søker.</h3>
+                            <h3>Alternativt kan du søke informajson i A-Z katalogen vår</h3>
+                        </div>
+                    </div>
+                    <div class='col-md-1'>
+                        
+                    </div>
+                
+                 </div>
+            </div>
+            <div class='content-alpha-block'>
+                <div class='row'>
+                    <div class='col-md-4'>
+                        <div class='content-main-menu'>
+                            <% @alpha.find(11, 9, 6).each do |a| %>
+                            <ul>
+                                <li>
+                                    <%= link_to show_alpha_path(a) do %>
+                                    <div class='list-item-alpha'>
+                                        <button><h2>
+                                            <%= a.name %>
+                                        </h2></button>
+                                    </div>
+                                    <% end %>
+                                </li>
+                            </ul>
+                            <% end %>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='content-main-menu'>
+                            <% @alpha.find(4, 2, 8).each do |a| %>
+                            <ul>
+                                <li>
+                                    <%= link_to show_alpha_path(a) do %>
+                                    <div class='list-item-alpha'>
+                                        <button><h2>
+                                            <%= a.name %>
+                                        </h2></button>
+                                    </div>
+                                    <% end %>
+                                </li>
+                            </ul>
+                            <% end %>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='content-main-menu'>
+                            <% @alpha.find(7, 5).each do |a| %>
+                            <ul>
+                                <li>
+                                    <%= link_to show_alpha_path(a) do %>
+                                    <div class='list-item-alpha'>
+                                        <button><h2>
+                                            <%= a.name %>
+                                        </h2></button>
+                                    </div>
+                                    <% end %>
+                                </li>
+                            </ul>
+                            <% end %>
+                            <ul>
+                                <li>
+                                    <div class='list-item-alpha'>
+                                        <button><h2>
+                                            A-Z
+                                        </h2></button>
+                                    </div>
+                                </li>
+                            </ul>    
+                        </div>
+                    </div>
+                 </div>
+                <div class='row'>
+                    <div class='col-md-4'>
+                        
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='content-main-menu'>
+                            
+                                <button class='a-emergency-btn'><h2>EMERGENCY</h2</button>
+                            
+                        </div>    
+                    </div>
+                    <div class='col-md-4'>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -12,6 +12,9 @@ Rails.application.routes.draw do
     delete '/logout' => 'sessions#destroy'
     
     get '/alpha/show/:id' => 'alphas#show' , as: :show_alpha
+    get '/alpha/kommunikasjon' => 'alpha#show', as: :show_kommunikasjon
+    get '/alpha/leietakere' => 'portals#show' , as: :show_portal
+    get 'portal/show/:id' =>  'alphas#show', as: :show_alphas
     
     
     
