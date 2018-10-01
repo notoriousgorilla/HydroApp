@@ -22,11 +22,15 @@ tekniskdrift = Alpha.create(name: 'Teknisk Drift', content: 'test', image: 'img'
 treningssenter = Alpha.create(name: 'Treningssenter', content: 'test', image: 'img')
 kantine = Alpha.create(name: 'Kantine', content: 'test', image: 'img')
 servicesenter = Alpha.create(name: 'Servicesenter 123', content: 'test', image: 'img')
-resepsjon = Alpha.create(name: 'Resepsjon', content: 'test', image: 'img')
+resepsjon = Alpha.create(name: 'Resepsjon & Sikkerhet', content: 'test', image: 'img')
 sikkerhet = Alpha.create(name: 'Sikkerhet/Vakta', content: 'test', image: 'img')
 kommunikasjon = Alpha.create(name: 'Kommunikasjon', content: 'test', image: 'img')
 frisor = Alpha.create(name: 'Frisør', content: 'test', image: 'img')
-park = Alpha.create(name: 'Park & Rekreasjonsområder', content: 'test', image: 'img')
+
+leietakere = Portal.create(name: 'For Leietakere')
+potensielle = Portal.create(name: 'Interessert i å leie?')
+kantinemeny = Portal.create(name: 'Dagens Kantinemeny')
+busstider = Portal.create(name: 'Busstider Realtime')
 
 
 

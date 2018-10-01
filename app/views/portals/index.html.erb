@@ -1,28 +1,40 @@
 <body>
-    <div class='container-fluid'>
-        <div class='content-main-block'>
-            <div class='row'>
-                <div class='col-md-4'>
-                    <div class='content-main-menu'>
-                        <ul>
-                            <li><h2><button>FOR LEIETAKERE</button></h2></li>
-                            <li><h4><button>DAGENS MENY KANTINE</button></h2></li>
-                            <li><h4><button>BUSSTIDER REALTIME</button></h2></li>
-                            <li><h2><button>FOR LEIETAKERE</button></h2></li>
-                        </ul> 
+    <div class='container-fluid' id='index-container-fluid'>
+        <div class='content-main-container'>
+            <div class='content-main-block'>
+                <div class='row'>
+                    <div class='col-md-4'>
+                        <div class='content-main-menu'>
+                           
+                                <ul>
+                                     
+                                    <li>
+                                        <%= link_to show_portal_path(@portals) do %>  <!-- by wrapping these divs in a ruby loop the whole div becomes a link -->
+                                        <h2><button>
+                                            <%=  @portals.first.name.upcase %>
+                                        </button></h2>
+                                         <% end %>
+                                    </li> 
+                                    <li><h4><button>DAGENS MENY KANTINE</button></h4></li>
+                                    <li><h4><button>BUSSTIDER REALTIME</button></h4></li>
+                                    <li><h2><button><%= @portals.second.name.upcase %></button></h2></li>
+                                   
+                                </ul>
+                            
+                        </div>
                     </div>
-                </div>
-                <div class='col-md-4'>
-                    <div class='content-main-blank'>
-                        
-                    </div> 
-                </div>
-                <div class='col-md-4'>
-                    <div class='content-main-blank'>
-                        
+                    <div class='col-md-4'>
+                        <div class='content-main-blank'>
+                            
+                        </div> 
                     </div>
+                    <div class='col-md-4'>
+                        <div class='content-main-blank'>
+                            
+                        </div>
+                    </div>    
                 </div>    
-            </div>    
+            </div>
         </div>
     </div>
 </body>
