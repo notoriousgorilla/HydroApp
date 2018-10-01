@@ -24,13 +24,13 @@ html, body {
 #index-container-fluid {
     min-height: 100%;
     width: 100%;
-    background-image: url('vkpark_birdview_logo.png');
+    background-image: asset-url('vkpark_birdview_logo.png');
 }
 
 #container-fill-screen {
     height: 100%;
     width: 100%;
-    background-image: url('sea_view.png');
+    background-image: asset-url('sea_view.png');
     background-size: cover;
 }
 
