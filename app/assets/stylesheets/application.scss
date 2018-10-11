@@ -16,3 +16,8 @@
 
 @import "bootstrap";
 
+body {
+    background-image: asset-url('basalt_wall_1.1.png');
+    background-size: contain;
+    //background-color: rgba(173, 178, 189, 1);
+}
