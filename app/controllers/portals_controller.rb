@@ -8,4 +8,8 @@ class PortalsController < ApplicationController
         @alpha = Alpha.all  
     end
     
+    def gorilla
+        
+    end
+    
 end
