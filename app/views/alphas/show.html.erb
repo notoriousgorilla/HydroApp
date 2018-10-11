@@ -1,4 +1,4 @@
-<div class='container'>
+<div class='container' id='container-back-color'>
     <div class='row'>
         <div class='col-md-2'>
             
@@ -35,7 +35,7 @@
     </div>
     <div class='row'>
         <div class='col-md-6'>
-        <% @betalinks.first(1).each do |beta| %>
+        <% @betalinks.first(2).each do |beta| %>
             <div class='row'>
                 <div class='col-md-1'>
                     
@@ -51,13 +51,14 @@
                     
                 </div>
             </div>
-        </div>
         <% end %>
+        </div>
+        
         <div class='col-md-6'>
-            <% @betalinks.last(1).each do |beta| %>
+        <% @betalinks.last(2).each do |beta| %>
             <div class='row'>
                 <div class='col-md-1'>
-                    
+                        
                 </div>
                 <div class='col-md-10'> 
                     <div class='alpha-block-title'>
@@ -67,12 +68,13 @@
                     </div>
                 </div>
                 <div class='col-md-1'>
-                    
+                        
                 </div>
             </div>
-        </div>
         <% end %>
         </div>
+        
+    </div>
     <div class='row'>
         <div class='col-md-6'>
             <div class='row'>

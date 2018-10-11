@@ -73,9 +73,11 @@
                             <ul>
                                 <li>
                                     <div class='list-item-alpha'>
+                                        <%= link_to gorilla_portal_path(@portals) do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link -->
                                         <button><h2>
                                             A-Z
                                         </h2></button>
+                                        <% end %>
                                     </div>
                                 </li>
                             </ul>    
