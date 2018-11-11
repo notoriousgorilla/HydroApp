@@ -43,7 +43,7 @@
                             <% @alpha.find(4, 2, 8).each do |a| %>
                             <ul>
                                 <li>
-                                    <%= link_to show_alpha_path(a) do %>
+                                    <%= link_to show_alpha_path(a) do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link -->
                                     <div class='list-item-alpha'>
                                         <button><h2>
                                             <%= a.name %>
@@ -60,7 +60,7 @@
                             <% @alpha.find(7, 5).each do |a| %>
                             <ul>
                                 <li>
-                                    <%= link_to show_alpha_path(a) do %>
+                                    <%= link_to show_alpha_path(a) do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link -->
                                     <div class='list-item-alpha'>
                                         <button><h2>
                                             <%= a.name %>
