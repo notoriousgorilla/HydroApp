@@ -14,7 +14,9 @@
     }
     p {
         max-width: 100%;
-    }   
+    }
+    
+    
     
 }
 
@@ -28,4 +30,11 @@
     img {   //image_tag counts as a <img> tag
         max-width: 100%;
     } 
+}
+
+.beta-list-tmplt {
+   .link-remove-styles {
+        text-decoration: none;
+        color: #000000;
+    }
 }

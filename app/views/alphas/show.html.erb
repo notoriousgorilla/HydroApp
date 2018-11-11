@@ -33,47 +33,103 @@
             </div>
         </div>
     </div>
-    <div class='row'>
-        <div class='col-md-6'>
-        <% @betalinks.first(2).each do |beta| %>
-            <div class='row'>
-                <div class='col-md-1'>
+    <div class='beta-list-tmplt'>
+        <div class='row'>
+            <div class='col-md-6'>
+            <% @betalinks.first(1).each do |beta| %>    <!-- buss -->
+                <div class='row'>
+                    <div class='col-md-1'>  
+                    </div>
                     
-                </div>
-                <div class='col-md-10'> 
-                    <div class='alpha-block-title'>
-                        <h3><%= beta.name %></h3>
-                        <p><%= beta.content %></p>
-                        <p><%= image_tag beta.image %></p>
+                    <div class='col-md-10'>
+                        <%= link_to betalink_path(beta), class: 'link-remove-styles'  do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link --> 
+                        <div class='alpha-block-title'>
+                            <ul>
+                                
+                                <h3><%= beta.name %></h3>
+                                <p><%= beta.content %></p>
+                                <p><%= image_tag beta.image %></p>
+                               
+                            </ul>
+                        </div>
+                         <% end %>
+                    </div>
+                    
+                    <div class='col-md-1'>
+                        
                     </div>
                 </div>
-                <div class='col-md-1'>
-                    
-                </div>
-            </div>
-        <% end %>
-        </div>
-        
-        <div class='col-md-6'>
-        <% @betalinks.last(2).each do |beta| %>
-            <div class='row'>
-                <div class='col-md-1'>
+            <% end %>
+            <% @betalinks.last(1).each do |beta| %> <!--tog -->
+                <div class='row'>
+                    <div class='col-md-1'>  
+                    </div>
+                    <div class='col-md-10'>
+                        <%= link_to togtider_portal_path, class: 'link-remove-styles', method: :get , remote: true  do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link --> 
+                        <div class='alpha-block-title'>
+                            <ul>
+                                
+                                <h3><%= beta.name %></h3>
+                                <p><%= beta.content %></p>
+                                <p><%= image_tag beta.image %></p>
+                               
+                            </ul>
+                        </div>
+                         <% end %>
+                    </div>
+                    <div class='col-md-1'>
                         
-                </div>
-                <div class='col-md-10'> 
-                    <div class='alpha-block-title'>
-                        <h3><%= beta.name %></h3>
-                        <p><%= beta.content %></p>
-                        <p><%= image_tag beta.image %></p>
                     </div>
                 </div>
-                <div class='col-md-1'>
-                        
-                </div>
+            <% end %>
             </div>
-        <% end %>
+            
+            
+            <div class='col-md-6'>
+            <% @betalink.last(1).each do |beta| %> <!-- taxi -->
+                <div class='row'>
+                    <div class='col-md-1'>
+                            
+                    </div>
+                    <div class='col-md-10'>
+                        <%= link_to taxi_portal_path, class: 'link-remove-styles' do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link --> 
+                        <div class='alpha-block-title'>
+                            <ul>
+                                
+                                <h3><%= beta.name %></h3>
+                                <p><%= beta.content %></p>
+                                <p><%= image_tag beta.image %></p>
+                               
+                            </ul>
+                        </div>
+                        <% end %>
+                    </div>
+                </div>
+            <% end %>
+            <% @betalink.first(1).each do |beta| %> <!-- båt -->
+                <div class='row'>
+                    <div class='col-md-1'>  
+                    </div>
+                    <div class='col-md-10'>
+                        <%= link_to boat_portal_path, class: 'link-remove-styles'  do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link --> 
+                        <div class='alpha-block-title'>
+                            <ul>
+                                
+                                <h3><%= beta.name %></h3>
+                                <p><%= beta.content %></p>
+                                <p><%= image_tag beta.image %></p>
+                               
+                            </ul>
+                        </div>
+                         <% end %>
+                    </div>
+                    <div class='col-md-1'>
+                        
+                    </div>
+                </div>
+            <% end %>
         </div>
-        
+    </div>    
     </div>
     <div class='row'>
         <div class='col-md-6'>

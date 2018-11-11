@@ -1,0 +1,6 @@
+<%= link_to busstider_betalink_path(@betalinks) do %>  <!-- by wrapping these divs in a ruby loop the whole div becomes a link -->
+    <h2><button>
+        <%=  @betalinks.name.upcase %>
+    </button></h2>
+<% end %>
+<p>test av busstider</p>
