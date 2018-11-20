@@ -32,6 +32,7 @@ gem 'bootstrap', '~> 4.1.1'
 
 #jquery for ruby
 gem 'jquery-rails'
+gem 'jquery-turbolinks'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

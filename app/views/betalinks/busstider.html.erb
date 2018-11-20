@@ -1,1 +1,94 @@
-<p>test av busstider</p>
+<body>
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class='menu-button-float'>
+                <div class='menu-button-img'>
+                    <p>MENU</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='container' id='container-back-color'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <div class='container'>
+                        <div class='bus-background'>
+                            <div class='row'>
+                                <div class='col-md-2'>
+                                    
+                                </div>
+                                <div class='col-md-8'>
+                                    <div class='alpha-block-title'>
+                                        <% @betalinks.find([5]).each do |b| %>
+                                        <h1><%= b.name.upcase %></h1>
+                                        <% end %>
+                                    </div>
+                                        
+                                </div>
+                                <div class='col-md-2'>
+                                    
+                                </div>
+                            </div>
+                            <div class='comm-block-image'>
+                                <div class='row'>
+                                    <div class='col-md-4'>
+                                        <%= link_to realtime_betalink_path, class: 'link-remove-styles'  do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link --> 
+                                        <h2>BUSS REALTIME</h2>
+                                        <div class='bus-realtime-tag'>
+                                            <img src="assets/realtime.png" alt= 'realtime'>
+                                        </div>
+                                        <% end %>
+                                    </div>
+                                    <div class='col-md-4'>
+                                        
+                                    </div>
+                                    <div class='col-md-4'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                           <div class='comm-block-image'>
+                                <div class='row'>
+                                    <div class='col-md-4'>
+                                        
+                                        <div class='bus-realtime-tag'>
+                                            <h2>RUTEKART</h2>
+                                            <img src="assets/rutekart.png" alt= 'rutekart'>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-4'>
+                                        
+                                    </div>
+                                    <div class='col-md-4'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='comm-block-image'>
+                                <div class='row'>
+                                    <div class='col-md-4'>
+                                        <h2>BUSSTOPP</h2>
+                                        <div class='bus-realtime-tag'>
+                                            <img src="assets/vkr_stopp.png" alt= 'busstopp'>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-4'>
+                                       
+                                        
+                                    </div>
+                                    <div class='col-md-4'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+    </div>
+        
+</body>
