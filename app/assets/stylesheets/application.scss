@@ -16,8 +16,42 @@
 
 @import "bootstrap";
 
-body {
+// this is the javascript top menu css
+.col-md-12 {
+   .menu-button-float {
+        .menu-button-img {
+            p {
+                font-size: 2em;
+                margin-left: 2em;
+            }
+            background-color: rgba(173, 178, 189, 0.8);
+            height: 3em;
+        }
+        .menu-button-active {
+            p {
+                font-size: 2em;
+                margin-left: 2em;
+            }
+            background-color: rgba(173, 178, 180, 0.8);
+            height: 3em;
+        }
+    } 
+}
+
+header {
+    background-color: black;
+    height: 10%;
+}
+
+html, body {
+    height: 100%;
     background-image: asset-url('basalt_wall_1.1.png');
     background-size: contain;
-    //background-color: rgba(173, 178, 189, 1);
+    //background-color: rgba(173, 178, 189, 1);  
+}
+
+.body-main-app-active {
+    height: 90%;
+    background-image: asset-url('basalt_wall_1.1.png');
+    background-size: contain;
 }

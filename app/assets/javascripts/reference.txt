@@ -1,0 +1,73 @@
+$(document).ready(() => {
+      
+    
+   $(window).on('popstate', function() {
+        location.reload(true);
+    });
+    
+   document.addEventListener("turbolinks:load", function() {
+      var $menuButton = $('.menu-button-img');
+      var $headerMain = $('.header-main-app');
+      var $bodyMain = $('.body-main-app');
+    
+      $headerMain.hide();
+    
+      $menuButton.on('click', () => {
+         $headerMain.slideToggle('slow');
+        $menuButton.toggleClass('menu-button-active');
+        $bodyMain.toggleClass('body-main-app-active');
+      });
+   });
+    
+    
+    
+    
+    
+    //IGNORE EVERYTHING BELOW --- for reference
+    
+    var $alphaClass = $('.header-inner-alphas');
+    var $aboutClass = $('.header-inner-about');
+    var $locateClass = $('.header-inner-locate');
+    
+    var $alphaList = $('.content-main-alphas');
+    var $placeHolder1 = $('.content-main-placeholder1');
+    var $placeHolder2 = $('.content-main-placeholder2');
+    
+    $aboutClass.addClass('active-tab-main');
+    
+    $placeHolder1.show();
+    $placeHolder2.hide();
+    $alphaList.hide();
+    
+    $alphaClass.on('click', () => {
+        $alphaClass.addClass('active-tab-main');
+        $aboutClass.removeClass('active-tab-main');
+        $locateClass.removeClass('active-tab-main');    
+    }).on('click', () => {
+            $alphaList.show();
+            $placeHolder1.hide();
+            $placeHolder2.hide();
+        });
+    
+    $aboutClass.on('click', () => {
+        $aboutClass.addClass('active-tab-main');
+        $alphaClass.removeClass('active-tab-main');
+        $locateClass.removeClass('active-tab-main');
+        }).on('click', () => {
+            $alphaList.hide();
+            $placeHolder1.show();
+            $placeHolder2.hide();
+        });
+    
+    $locateClass.on('click', () => {
+        $locateClass.addClass('active-tab-main');
+        $alphaClass.removeClass('active-tab-main');
+        $aboutClass.removeClass('active-tab-main');
+        }).on('click', () => {
+            $alphaList.hide();
+            $placeHolder1.hide();
+            $placeHolder2.show();
+        });
+    
+        
+});

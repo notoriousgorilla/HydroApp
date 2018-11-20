@@ -1,3 +1,38 @@
 // Place all the styles related to the Betalinks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// this is the javascript top menu css //
+
+
+#container-back-color {
+    background-color: rgba(225, 225, 225, 0.7);
+    background-image: asset-url('buss.png');
+    background-size: cover;
+    height: 100%;
+    .bus-background {
+        border: black solid 1px;
+        max-height: 100%;
+        .comm-block-image {
+            max-width: 100%;
+            h2 {
+                
+                text-align: center;
+                border: black solid 1px;
+            }
+            text-align: left;
+            margin: 2em 0em 0em 0em;
+            padding: 2em 0em 0em 0em;
+            .bus-realtime-tag {
+                img {
+                    max-width: 100%;
+                }
+                border: black solid 1px;
+            }
+        }
+    }
+    
+}
+
+
+

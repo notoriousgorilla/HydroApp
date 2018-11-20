@@ -12,18 +12,17 @@ Rails.application.routes.draw do
     delete '/logout' => 'sessions#destroy'
     
     get '/alpha/show/:id' => 'alphas#show' , as: :show_alpha
-    #get '/alpha/kommunikasjon' => 'alphas#show', as: :show_kommunikasjon
     get '/alpha/leietakere' => 'portals#show' , as: :show_portal
     get 'portal/show/:id' =>  'alphas#show', as: :show_alphas
     
     get 'portal/gorilla' => 'portals#gorilla', as: :gorilla_portal
-    get '/alpha/show/:id/joker' => 'alphas#joker', as: :joker_alpha
-    get '/betalinks/:id' => 'betalinks#show', as: :betalink
     
-    get 'betalinks/:id/busstider' => 'betalinks#busstider', as: :busstider_betalink #router must have same name as the .html.erb is reverting to. In ths case busstider = busstider.html.erb
+    get '/busstider' => 'betalinks#busstider', as: :busstider_betalink #router must have same name as the .html.erb is reverting to. In ths case busstider = busstider.html.erb
     get 'portal/togtider' => 'portals#togtider', as: :togtider_portal
     get 'portal/taxi' => 'portals#taxi', as: :taxi_portal
     get 'portal/boats' => 'portals#boat', as: :boat_portal
+    
+    get '/busstider/realtime' => 'betalinks#realtime', as: :realtime_betalink
     
     
     
