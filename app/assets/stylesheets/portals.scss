@@ -2,27 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.jumbotron {
-    background-image: asset-url('generic_header.jpg');
-    background-size: cover;
-    margin: 0px;
-}
 
-#jumbo {
-    margin: 0px;
-    height: 300px;;
-}
+// this is the javascript top menu css 
 
-#main-back-alu {
-    background-color: #161617;
-}
-
-html, body {
-    height: 100%;
-}
 
 #index-container-fluid {
-    min-height: 100%;
+    height: 100%;
     width: 100%;
     background-image: asset-url('vkpark_birdview_logo.png');
 }
