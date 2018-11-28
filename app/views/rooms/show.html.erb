@@ -15,7 +15,7 @@
             </div>
             <div class='col-md-8'>
                 <div class='alpha-block-title'>
-                    <% @alphas.find([11]).each do |a| %> 
+                    <% @alphas.find([4]).each do |a| %> 
                         <p><%= a.name %></p>
                     <% end %>
                 </div>
@@ -32,14 +32,14 @@
                 </div>
                 <div class='col-md-5'>
                     <div class='alpha-block-content'>
-                        <% @alphas.find([11]).each do |a| %> 
+                        <% @alphas.find([4]).each do |a| %> 
                             <p><%= a.content %></p>
                         <% end %>    
                     </div>
                 </div>
                 <div class='col-md-5'>
                     <div class='alpha-block-image'>
-                        <% @alphas.find([11]).each do |a| %> 
+                        <% @alphas.find([4]).each do |a| %> 
                             <p><%= image_tag a.image %></p>
                         <% end %>
                     </div>
@@ -52,7 +52,7 @@
         <div class='beta-list-tmplt'>
             <div class='row'>
                 <div class='col-md-6'>
-                <% @betalinks.first(1).each do |beta| %>    <!-- buss -->
+                <% @rooms.first(1).each do |beta| %>    <!-- buss -->
                     <div class='row'>
                         <div class='col-md-1'>  
                         </div>
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 <% end %>
-                <% @betalinks.last(1).each do |beta| %> <!--tog -->
+                <% @rooms.last(1).each do |beta| %> <!--tog -->
                     <div class='row'>
                         <div class='col-md-1'>  
                         </div>
@@ -102,7 +102,7 @@
                 
                 
                 <div class='col-md-6'>
-                <% @betalink.last(1).each do |beta| %> <!-- taxi -->
+                <% @room.last(1).each do |beta| %> <!-- taxi -->
                     <div class='row'>
                         <div class='col-md-1'>
                                 
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                 <% end %>
-                <% @betalink.first(1).each do |beta| %> <!-- båt -->
+                <% @room.first(1).each do |beta| %> <!-- båt -->
                     <div class='row'>
                         <div class='col-md-1'>  
                         </div>
