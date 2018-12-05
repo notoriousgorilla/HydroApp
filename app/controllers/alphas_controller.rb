@@ -7,8 +7,16 @@ class AlphasController < ApplicationController
     
     def show
         @alpha = Alpha.find(params[:id])
-        @betalinks = @alpha.betalinks.limit(2) #limit to 2 results
-        @betalink = @alpha.betalinks.limit(2).order('id desc') #limit to 2 results with descending order
+        if @alpha[:id] == 11
+            @alpha = Alpha.all
+            redirect_to :controller => 'betalinks', :action => 'show' 
+        elsif @alpha[:id] == 4
+            redirect_to :controller => 'rooms', :action => 'show'
+        elsif @alpha[:id] == 7
+            redirect_to :controller => 'foods', :action => 'show'
+        else
+            redirect_to 'portals#index'
+        end
     end
     
    
@@ -20,7 +28,6 @@ class AlphasController < ApplicationController
         def betalink_params
             params.require(:betalink).permit(:name, :content, :image, :betalink_id)
         end
-    
-    
+        
 end
     

@@ -15,9 +15,7 @@
             </div>
             <div class='col-md-8'>
                 <div class='alpha-block-title'>
-                    <% @alphas.find([11]).each do |a| %> 
-                        <p><%= a.name %></p>
-                    <% end %>
+                    <h1><%= @alpha.name %></h1>
                 </div>
                     
             </div>
@@ -32,16 +30,14 @@
                 </div>
                 <div class='col-md-5'>
                     <div class='alpha-block-content'>
-                        <% @alphas.find([11]).each do |a| %> 
-                            <p><%= a.content %></p>
-                        <% end %>    
+                        <% @alpha.find[1].each do |a| %> 
+                        <p><%= a.content %></p>
+                        <% end %>
                     </div>
                 </div>
                 <div class='col-md-5'>
                     <div class='alpha-block-image'>
-                        <% @alphas.find([11]).each do |a| %> 
-                            <p><%= image_tag a.image %></p>
-                        <% end %>
+                        <p><%= image_tag @alpha.image %></p>
                     </div>
                 </div>
                 <div class='col-md-1'>
@@ -137,7 +133,7 @@
                                    
                                 </ul>
                             </div>
-                            <% end %>
+                             <% end %>
                         </div>
                         <div class='col-md-1'>
                             
