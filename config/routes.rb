@@ -20,7 +20,8 @@ Rails.application.routes.draw do
     
     get '/busstider' => 'betalinks#busstider', as: :busstider_betalink #router must have same name as the .html.erb is reverting to. In ths case busstider = busstider.html.erb
     get '/alpha/show/11/kommunikasjon' => 'betalinks#show'
-    get '/alpha/show/11/meeting_rooms' => 'rooms#show'
+    get '/alpha/show/4/meeting_rooms' => 'rooms#show'
+    get '/alpha/show/7/kantine' => 'foods#show'
     get 'portal/togtider' => 'portals#togtider', as: :togtider_portal
     get 'portal/taxi' => 'portals#taxi', as: :taxi_portal
     get 'portal/boats' => 'portals#boat', as: :boat_portal

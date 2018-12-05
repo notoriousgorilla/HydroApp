@@ -12,6 +12,8 @@ class AlphasController < ApplicationController
             redirect_to :controller => 'betalinks', :action => 'show' 
         elsif @alpha[:id] == 4
             redirect_to :controller => 'rooms', :action => 'show'
+        elsif @alpha[:id] == 7
+            redirect_to :controller => 'foods', :action => 'show'
         else
             redirect_to 'portals#index'
         end
