@@ -22,6 +22,9 @@ Rails.application.routes.draw do
     get '/alpha/show/11/kommunikasjon' => 'betalinks#show'
     get '/alpha/show/4/meeting_rooms' => 'rooms#show'
     get '/alpha/show/7/kantine' => 'foods#show'
+    get '/alpha/show/2/parking' => 'parkings#show'
+    get '/alpha/show/5/facility_management' => 'techs#show'
+    get '/alpha/show/6/gym_facility' => 'gyms#show'
     get 'portal/togtider' => 'portals#togtider', as: :togtider_portal
     get 'portal/taxi' => 'portals#taxi', as: :taxi_portal
     get 'portal/boats' => 'portals#boat', as: :boat_portal
