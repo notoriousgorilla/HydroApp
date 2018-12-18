@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_04_201402) do
+ActiveRecord::Schema.define(version: 2018_12_17_162453) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,16 @@ ActiveRecord::Schema.define(version: 2018_12_04_201402) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "desks", force: :cascade do |t|
+    t.string "name"
+    t.string "content"
+    t.string "image"
+    t.bigint "alpha_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["alpha_id"], name: "index_desks_on_alpha_id"
+  end
+
   create_table "foods", force: :cascade do |t|
     t.string "name"
     t.string "content"
@@ -48,12 +58,42 @@ ActiveRecord::Schema.define(version: 2018_12_04_201402) do
     t.index ["alpha_id"], name: "index_foods_on_alpha_id"
   end
 
+  create_table "frontdesks", force: :cascade do |t|
+    t.string "name"
+    t.string "content"
+    t.string "image"
+    t.bigint "alpha_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["alpha_id"], name: "index_frontdesks_on_alpha_id"
+  end
+
+  create_table "gyms", force: :cascade do |t|
+    t.string "name"
+    t.string "content"
+    t.string "image"
+    t.bigint "alpha_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["alpha_id"], name: "index_gyms_on_alpha_id"
+  end
+
   create_table "meetings", force: :cascade do |t|
     t.string "name"
     t.string "roomnumber"
     t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "parkings", force: :cascade do |t|
+    t.string "name"
+    t.string "content"
+    t.string "image"
+    t.bigint "alpha_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["alpha_id"], name: "index_parkings_on_alpha_id"
   end
 
   create_table "portals", force: :cascade do |t|
@@ -70,6 +110,16 @@ ActiveRecord::Schema.define(version: 2018_12_04_201402) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["alpha_id"], name: "index_rooms_on_alpha_id"
+  end
+
+  create_table "teches", force: :cascade do |t|
+    t.string "name"
+    t.string "content"
+    t.string "image"
+    t.bigint "alpha_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["alpha_id"], name: "index_teches_on_alpha_id"
   end
 
   create_table "users", force: :cascade do |t|
