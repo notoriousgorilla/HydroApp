@@ -14,6 +14,16 @@ class AlphasController < ApplicationController
             redirect_to :controller => 'rooms', :action => 'show'
         elsif @alpha[:id] == 7
             redirect_to :controller => 'foods', :action => 'show'
+        elsif @alpha[:id] == 2
+            redirect_to :controller => 'parkings', :action => 'show'
+        elsif @alpha[:id] == 5
+            redirect_to :controller => 'techs', :action => 'show'
+        elsif @alpha[:id] == 9
+            redirect_to :controller => 'desks', :action => 'show'
+        elsif @alpha[:id] == 6
+            redirect_to :controller => 'gyms', :action => 'show'
+        elsif @alpha[:id] == 8
+            redirect_to :controller => 'frontdesks', :action => 'show'
         else
             redirect_to 'portals#index'
         end

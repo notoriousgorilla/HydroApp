@@ -1,0 +1,170 @@
+<body>
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class='menu-button-float'>
+                <div class='menu-button-img'>
+                    <p>MENU</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='container' id='container-back-color-alpha'>
+        <div class='row'>
+            <div class='col-md-2'>
+                
+            </div>
+            <div class='col-md-8'>
+                <div class='alpha-block-title'>
+                    <% @alphas.find([7]).each do |a| %> 
+                        <p><%= a.name %></p>
+                    <% end %>
+                </div>
+                    
+            </div>
+            <div class='col-md-2'>
+                
+            </div>
+        </div>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-1'>
+                            
+                </div>
+                <div class='col-md-5'>
+                    <div class='alpha-block-content'>
+                        <% @alphas.find([7]).each do |a| %> 
+                            <p><%= a.content %></p>
+                        <% end %>    
+                    </div>
+                </div>
+                <div class='col-md-5'>
+                    <div class='alpha-block-image'>
+                        <% @alphas.find([7]).each do |a| %> 
+                            <p><%= image_tag a.image %></p>
+                        <% end %>
+                    </div>
+                </div>
+                <div class='col-md-1'>
+                            
+                </div>
+            </div>
+        </div>
+        <div class='beta-list-tmplt'>
+            <div class='row'>
+                <div class='col-md-6'>
+                <% @techs.first(1).each do |beta| %>    <!-- buss -->
+                    <div class='row'>
+                        <div class='col-md-1'>  
+                        </div>
+                        
+                        <div class='col-md-10'>
+                            <%= link_to busstider_betalink_path, class: 'link-remove-styles'  do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link --> 
+                            <div class='alpha-block-title'>
+                                <ul>
+                                    
+                                    <h3><%= beta.name %></h3>
+                                    <p><%= beta.content %></p>
+                                    <p><%= image_tag beta.image %></p>
+                                   
+                                </ul>
+                            </div>
+                            <% end %>
+                        </div>
+                        
+                        <div class='col-md-1'>
+                            
+                        </div>
+                    </div>
+                <% end %>
+                <% @techs.last(1).each do |beta| %> <!--tog -->
+                    <div class='row'>
+                        <div class='col-md-1'>  
+                        </div>
+                        <div class='col-md-10'>
+                            <%= link_to togtider_portal_path, class: 'link-remove-styles', method: :get , remote: true  do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link --> 
+                            <div class='alpha-block-title'>
+                                <ul>
+                                    
+                                    <h3><%= beta.name %></h3>
+                                    <p><%= beta.content %></p>
+                                    <p><%= image_tag beta.image %></p>
+                                   
+                                </ul>
+                            </div>
+                            <% end %>
+                        </div>
+                        <div class='col-md-1'>
+                            
+                        </div>
+                    </div>
+                <% end %>
+                </div>
+                
+                
+                <div class='col-md-6'>
+                <% @tech.last(1).each do |beta| %> <!-- taxi -->
+                    <div class='row'>
+                        <div class='col-md-1'>
+                                
+                        </div>
+                        <div class='col-md-10'>
+                            <%= link_to taxi_portal_path, class: 'link-remove-styles' do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link --> 
+                            <div class='alpha-block-title'>
+                                <ul>
+                                    
+                                    <h3><%= beta.name %></h3>
+                                    <p><%= beta.content %></p>
+                                    <p><%= image_tag beta.image %></p>
+                                   
+                                </ul>
+                            </div>
+                            <% end %>
+                        </div>
+                    </div>
+                <% end %>
+                <% @tech.first(1).each do |beta| %> <!-- båt -->
+                    <div class='row'>
+                        <div class='col-md-1'>  
+                        </div>
+                        <div class='col-md-10'>
+                            <%= link_to boat_portal_path, class: 'link-remove-styles'  do %> <!-- by wrapping these divs in a ruby loop the whole div becomes a link --> 
+                            <div class='alpha-block-title'>
+                                <ul>
+                                    
+                                    <h3><%= beta.name %></h3>
+                                    <p><%= beta.content %></p>
+                                    <p><%= image_tag beta.image %></p>
+                                   
+                                </ul>
+                            </div>
+                            <% end %>
+                        </div>
+                        <div class='col-md-1'>
+                            
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>    
+        </div>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <div class='alpha-block-content'>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class='col-md-6'>
+                        <div class='alpha-block-image'>
+                            <p></p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-6'>
+                <!-- insert betalink "second" --> 
+            </div>
+        </div>
+    </div>
+</body>
