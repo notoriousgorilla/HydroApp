@@ -7,13 +7,13 @@
 
 
 #index-container-fluid {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     background-image: asset-url('vkpark_birdview_logo.png');
 }
 
 #container-fill-screen {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     background-image: asset-url('sea_view.png');
     background-size: cover;
@@ -47,13 +47,13 @@
 .content-alpha-block {
     text-align: center;
     .title-main-upr {
-        padding: 5em 0em 0em 0em;
+        padding: 1em 0em 0em 0em;
         h1 {
             color: white;
         }
     }
     .content-main-menu {
-        padding: 5em 0em 0em 0em;
+        padding: 1em 0em 0em 0em;
         ul {
             list-style-type:none;
             padding:0px;
