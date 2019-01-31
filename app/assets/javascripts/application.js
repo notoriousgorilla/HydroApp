@@ -15,12 +15,8 @@
 //= require jquery_ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
-
-//This functions reloads page when back-button is pressed - consider moving it to applications.js -- needed because jQuery is not loading on back-button
-   
-    
-  
+//= require bootstrap
+//= require_tree .  
     
    document.addEventListener("turbolinks:load", function() {
       var $menuButton = $('.menu-button-img');
