@@ -13,9 +13,11 @@
     <div class='fluid-container'>
       <div class='row'>
         <div class='col-md-2'>
-          <div class='logo-home-app'>
-            <%= image_tag('iconfinder_home_118661.png', class: 'img-fluid') %>
-          </div>  
+          <%= link_to index_portal_path do %>
+            <div class='logo-home-app'>
+              <%= image_tag('iconfinder_home_118661.png', class: 'img-fluid') %>
+            </div>
+          <% end %>
         </div>
         <div class='col-md-2'>
           
