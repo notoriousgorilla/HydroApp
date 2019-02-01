@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
     
-    root 'portals#index'
+    root 'portals#index', as: :index_portal
     
     get '/signup'  => 'users#new' 
     resources :users
